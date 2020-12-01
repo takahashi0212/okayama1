@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OKAYAMA</title>
+    <link rel="stylesheet" href="styles/loader.css">
+    <script src="scripts/vendors/pace.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="styles/vendors/swiper.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <div class="nav-trigger"></div>
+        <header class="header">
+          <div class="header__inner appear up">
+            <div class="logo item">
+              <img src="images/momo05.png" alt="" class="logo__img">
+              <span class="logo__stay">OKA</span>
+              <span class="logo__world">YAMA</span>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <li class="header__li item"><a href="#">TOP</a></li>
+                <li class="header__li item"><a href="#">Famous place</a></li>
+                <li class="header__li item"><a href="food.html">Food</a></li>
+                <li class="header__li item">
+                  <a class="btn filled" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+          </div>
+        </header>
+
+        <div id="content">
+          <div class="hero">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__title">Korakuen</div>
+                  <img src="images/okayama01.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Okayama</div>
+                  <img src="images/okayama02.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Kurashiki</div>
+                  <img src="images/okayama03.jpg" alt="" />
+                </div>
+              </div>
+              <div class="hero__footer">
+                <img class="hero__downarrow" src="images/arrow.svg">
+                <span class="hero__scrolltext">scroll</span>
+              </div>
+            </div>
+          </div>
+          <div id="main-content">
+            <main>
+              <section class="houses content-width">
+                <div>
+                  <h2 class="main-title tween-animate-title">Famous places in Okayama</h2>
+                  <p class="sub-title tween-animate-title">岡山県の観光名所</p>
+                  <div class="houses__inner">
+
+                    <div class="houses__item">
+                      <div class="cover-slide hover-darken inview">
+                        <div id="open" class="bg-img-zoom img-bg50" style="background-image: url(images/bridge01.jpeg)"></div>
+                      </div>
+                      <p class="houses__title">瀬戸大橋</p>
+                    </div>
+
+                    <div id="mask" class="hidden"></div>
+                    
+                    <section id="modal" class="hidden">
+                      <img src="images/bridge01.jpeg" alt="瀬戸大橋" width="500px" height="300px">
+                      <div id="close">
+                        閉じる
+                      </div>
+                    </section>
+
+
+                    <div class="houses__item">
+                      <div class="cover-slide hover-darken inview">
+                        <div id="open" class="bg-img-zoom img-bg50" style="background-image: url(images/kourakuen.jpeg)"></div>
+                      </div>
+                      <p class="houses__title">岡山後楽園</p>
+                    </div>
+
+                    <div id="mask" class="hidden"></div>
+                    
+                    <section id="modal" class="hidden">
+                      <img src="images/kourakuen.jpeg" alt="岡山後楽園" width="500px" height="300px">
+                      <div id="close">
+                        閉じる
+                      </div>
+                    </section>
+
+                    <div class="houses__item">
+                      <div class="cover-slide hover-darken inview">
+                        <div class="bg-img-zoom img-bg50" style="background-image: url(images/bikantiku.jpeg)"></div>
+                      </div>
+                      <p class="houses__title">美観地区</p>
+                    </div>
+                    <div class="houses__item">
+                      <div class="cover-slide hover-darken inview">
+                        <div class="bg-img-zoom img-bg50" style="background-image: url(images/matuyama.jpg)"></div>
+                      </div>
+                      <p class="houses__title">備中松山城</p>
+                    </div>
+                    <div class="houses__btn">
+                      <button class="btn slide-bg">もっと詳しく</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="popular">
+                <div class="popular__header">
+                  <h2 class="main-title tween-animate-title">Okayama Food</h2>
+                  <p class="sub-title tween-animate-title">岡山県のフード</p>
+                </div>
+                <div class="popular__inner appear up">
+                  <div class="popular__container">
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="images/hakuto.jpg" alt="" />
+                      </div>
+                      <div class="popular__title">白桃</div>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="images/food0.jpg" alt="">
+                      </div>
+                      <div class="popular__title">シャインマスカット</div>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="images/kibidango.jpg" alt="">
+                      </div>
+                      <div class="popular__title">きびだんご</div>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="images/food02.jpeg" alt="">
+                      </div>
+                      <div class="popular__title">鰆（サワラ）</div>
+                    </div>
+                    <div class="popular__btn">
+                      <button class="btn float">一覧から探す</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
+          </div>
+        </div>
+        <footer class="footer appear up">
+          <div class="logo item">
+            <img src="images/momo05.png" alt="" class="logo__img">
+            <span class="logo__stay">OKA</span>
+            <span class="logo__world">YAMA</span>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li item"><a href="#">Service</a></li>
+              <li class="footer__li item"><a href="#">Contact</a></li>
+              <li class="footer__li item"><a href="#">Company</a></li>
+              <li class="footer__li item"><a href="#">Sitemap</a></li>
+            </ul>
+            <div class="footer__copyright item">
+              &copy; Reon Takahashi
+            </div>
+          </nav>
+        </footer>
+      </div>
+      <nav class="mobile-menu">
+        <div class="logo">
+          <img src="images/momo05.png" alt="" class="logo__img">
+          <span class="logo__stay">OKA</span>
+          <span class="logo__world">YAMA</span>
+        </div>
+
+        <ul class="mobile-menu__main">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    <span class="main-title">Famous place</span>
+                    <span class="sub-title">岡山県の名所</span>
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="food.html">
+                    <span class="main-title">Okayama Food</span>
+                    <span class="sub-title">岡山県のフード</span>
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    <span class="main-title">Contact Us</span>
+                    <span class="sub-title">コンタクト方法</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+
+    <script src="scripts/vendors/swiper.min.js"></script>
+    <script src="scripts/vendors/TweenMax.min.js"></script>
+    <script src="scripts/vendors/scroll-polyfill.js"></script>
+    <script src="scripts/libs/scroll.js"></script>
+    <script src="scripts/libs/modal.js"></script>
+    <script src="scripts/libs/text-animation.js"></script> 
+    <script src="scripts/libs/hero-slider.js"></script>  
+    <script src="scripts/libs/mobile-menu.js"></script>  
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
