@@ -1204,6 +1204,7 @@ img {
 
 .logo__img {
   width: 1.5em;
+  height: 1.5em;
 }
 
 .logo__world {
@@ -1281,6 +1282,45 @@ img {
 }
 
 #modal.hidden {
+  -webkit-transform: translate(-1100px, 0);
+          transform: translate(-1100px, 0);
+}
+
+#open02, #close02 {
+  cursor: pointer;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal02 {
+  background: #fff;
+  width: 540px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 700px;
+  left: 0;
+  right: 550px;
+  margin: 0 auto;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+#modal02.hidden {
   -webkit-transform: translate(-1100px, 0);
           transform: translate(-1100px, 0);
 }

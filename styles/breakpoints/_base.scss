@@ -200,6 +200,7 @@ display: flex;
 
   &__img {
     width: 1.5em;
+    height: 1.5em;
   }
 
   &__world {
@@ -275,5 +276,45 @@ display: flex;
   transition: transform 0.4s;
 }
 #modal.hidden {
+  transform: translate(-1100px, 0);
+}
+
+
+
+
+#open02, #close02 {
+  cursor: pointer;
+}
+
+#mask {
+  background: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+#modal02 {
+  background: #fff;
+  width: 540px;
+  padding: 20px;
+  border-radius: 4px;
+  // position: fixed;
+  // top: 40%;
+  // right: 50%;
+  position: absolute;
+  top: 700px;
+  left: 0;
+  right: 550px;
+  margin: 0 auto;
+  z-index: 2;
+  transition: transform 0.4s;
+}
+#modal02.hidden {
   transform: translate(-1100px, 0);
 }
