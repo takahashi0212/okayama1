@@ -261,7 +261,7 @@ display: flex;
 
 #modal {
   background: #fff;
-  width: 540px;
+  width: 100%;
   padding: 20px;
   border-radius: 4px;
   // position: fixed;
@@ -274,12 +274,18 @@ display: flex;
   margin: 0 auto;
   z-index: 2;
   transition: transform 0.4s;
+  & img {
+    width: 100%;
+  }
 }
 #modal.hidden {
   transform: translate(-1100px, 0);
 }
 
-
+#close {
+  font-size: 50px;
+  text-align: right;
+}
 
 
 #open02, #close02 {
@@ -317,4 +323,9 @@ display: flex;
 }
 #modal02.hidden {
   transform: translate(-1100px, 0);
+}
+
+#map {
+  width: 100%;
+  height: 400px;
 }

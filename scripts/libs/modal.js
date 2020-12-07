@@ -1,6 +1,5 @@
 'use strict';
 
-{
   const open = document.getElementById('open');
   const open02 = document.getElementById('open02');
   const close = document.getElementById('close');
@@ -12,6 +11,7 @@
   open.addEventListener('click', () => {
     modal.classList.remove('hidden');
     mask.classList.remove('hidden');
+    console.log('クリック');
   });
   open02.addEventListener('click', () => {
     modal02.classList.remove('hidden');
@@ -34,4 +34,4 @@
     close.click();
     close02.click();
   });
-}
+
