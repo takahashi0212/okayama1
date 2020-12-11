@@ -32,14 +32,15 @@ function initMap() {
          position: markerLatLng, // マーカーを立てる位置を指定
             map: map // マーカーを立てる地図を指定
        });
-  
+       
      infoWindow[i] = new google.maps.InfoWindow({ // 吹き出しの追加
          content: '<div class="map">' + markerData[i]['name'] + '</div>' // 吹き出しに表示する内容
        });
-  
-     markerEvent(i); // マーカーにクリックイベントを追加
+
+       markerEvent(i); // マーカーにクリックイベントを追加
  }
 }
+
   
 // マーカーにクリックイベントを追加
 function markerEvent(i) {

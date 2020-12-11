@@ -242,7 +242,8 @@ display: flex;
 }
 
 
-#open, #close {
+#open01, #open02, #open03, #open04,
+#close01, #close02, #close03, #close04 {
   cursor: pointer;
 }
 
@@ -259,18 +260,11 @@ display: flex;
   }
 }
 
-#modal {
+#modal01, #modal02, #modal03, #modal04 {
   background: #fff;
   width: 100%;
   padding: 20px;
   border-radius: 4px;
-  // position: fixed;
-  // top: 40%;
-  // right: 50%;
-  position: absolute;
-  top: 700px;
-  left: 0;
-  right: 550px;
   margin: 0 auto;
   z-index: 2;
   transition: transform 0.4s;
@@ -278,18 +272,47 @@ display: flex;
     width: 100%;
   }
 }
-#modal.hidden {
-  transform: translate(-1100px, 0);
+#modal01 {
+  position: absolute;
+  top: 600px;
+  left: 0;
+  right: 550px;
+  &.hidden {
+    transform: translate(-1100px, 0);
+  }
 }
 
-#close {
+#modal02 {
+  position: absolute;
+  top: 1000px;
+  left: 0;
+  right: 550px;
+  &.hidden {
+    transform: translate(1100px, 0);
+  }
+}
+#modal03 {
+  position: absolute;
+  top: 1300px;
+  left: 0;
+  right: 550px;
+  &.hidden {
+    transform: translate(-1100px, 0);
+  }
+}
+#modal04 {
+  position: absolute;
+  top: 1400px;
+  left: 0;
+  right: 550px;
+  &.hidden {
+    transform: translate(1100px, 0);
+  }
+}
+
+#close01, #close02, #close03, #close04 {
   font-size: 50px;
   text-align: right;
-}
-
-
-#open02, #close02 {
-  cursor: pointer;
 }
 
 #mask {
@@ -305,25 +328,6 @@ display: flex;
   }
 }
 
-#modal02 {
-  background: #fff;
-  width: 540px;
-  padding: 20px;
-  border-radius: 4px;
-  // position: fixed;
-  // top: 40%;
-  // right: 50%;
-  position: absolute;
-  top: 700px;
-  left: 0;
-  right: 550px;
-  margin: 0 auto;
-  z-index: 2;
-  transition: transform 0.4s;
-}
-#modal02.hidden {
-  transform: translate(-1100px, 0);
-}
 
 #map {
   width: 100%;
