@@ -1296,7 +1296,7 @@ img {
 
 #modal02 {
   position: absolute;
-  top: 1000px;
+  top: 800px;
   left: 0;
   right: 550px;
 }
@@ -1308,7 +1308,7 @@ img {
 
 #modal03 {
   position: absolute;
-  top: 1300px;
+  top: 1000px;
   left: 0;
   right: 550px;
 }
@@ -1320,7 +1320,7 @@ img {
 
 #modal04 {
   position: absolute;
-  top: 1400px;
+  top: 1200px;
   left: 0;
   right: 550px;
 }
