@@ -1290,8 +1290,8 @@ img {
 }
 
 #modal01.hidden {
-  -webkit-transform: translate(-1100px, 0);
-          transform: translate(-1100px, 0);
+  -webkit-transform: translate(-1200px, 0);
+          transform: translate(-1200px, 0);
 }
 
 #modal02 {
@@ -1302,8 +1302,8 @@ img {
 }
 
 #modal02.hidden {
-  -webkit-transform: translate(1100px, 0);
-          transform: translate(1100px, 0);
+  -webkit-transform: translate(-1300px, 0);
+          transform: translate(-1300px, 0);
 }
 
 #modal03 {
@@ -1314,8 +1314,8 @@ img {
 }
 
 #modal03.hidden {
-  -webkit-transform: translate(-1100px, 0);
-          transform: translate(-1100px, 0);
+  -webkit-transform: translate(-1200px, 0);
+          transform: translate(-1200px, 0);
 }
 
 #modal04 {
@@ -1326,8 +1326,8 @@ img {
 }
 
 #modal04.hidden {
-  -webkit-transform: translate(1100px, 0);
-          transform: translate(1100px, 0);
+  -webkit-transform: translate(-1300px, 0);
+          transform: translate(-1300px, 0);
 }
 
 #close01, #close02, #close03, #close04 {
@@ -1400,7 +1400,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
   #modal01, #modal02, #modal03, #modal04 {
     background: #fff;
-    width: 540px;
+    width: 400px;
     padding: 20px;
     border-radius: 4px;
     margin: 0 auto;
@@ -1417,24 +1417,24 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     position: absolute;
     top: 700px;
     left: 0;
-    right: 550px;
+    right: 600px;
   }
   #modal02 {
     position: absolute;
     top: 700px;
-    left: 550px;
+    left: 350px;
     right: 0;
   }
   #modal03 {
     position: absolute;
-    top: 1120px;
+    top: 920px;
     left: 0;
-    right: 550px;
+    right: 600px;
   }
   #modal04 {
     position: absolute;
-    top: 1120px;
-    left: 550px;
+    top: 920px;
+    left: 350px;
     right: 0;
   }
 }
@@ -1479,6 +1479,45 @@ Stylesheet: 960px以上のモニタで適用
   .swiper-slide {
     -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
             box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+  }
+  #modal01, #modal02, #modal03, #modal04 {
+    background: #fff;
+    width: 540px;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 0 auto;
+    z-index: 2;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+  }
+  #modal01 img, #modal02 img, #modal03 img, #modal04 img {
+    width: 100%;
+  }
+  #modal01 {
+    position: absolute;
+    top: 700px;
+    left: 0;
+    right: 550px;
+  }
+  #modal02 {
+    position: absolute;
+    top: 700px;
+    left: 550px;
+    right: 0;
+  }
+  #modal03 {
+    position: absolute;
+    top: 1120px;
+    left: 0;
+    right: 550px;
+  }
+  #modal04 {
+    position: absolute;
+    top: 1120px;
+    left: 550px;
+    right: 0;
   }
 }
 

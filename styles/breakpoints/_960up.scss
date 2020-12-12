@@ -48,3 +48,40 @@ Stylesheet: 960px以上のモニタで適用
   box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
 }
 
+#modal01, #modal02, #modal03, #modal04 {
+  background: #fff;
+  width: 540px;
+  padding: 20px;
+  border-radius: 4px;
+  margin: 0 auto;
+  z-index: 2;
+  transition: transform 0.4s;
+  & img {
+    width: 100%;
+  }
+}
+#modal01 {
+  position: absolute;
+  top: 700px;
+  left: 0;
+  right: 550px;
+}
+#modal02 {
+  position: absolute;
+  top: 700px;
+  left: 550px;
+  right: 0;
+}
+#modal03 {
+  position: absolute;
+  top: 1120px;
+  left: 0;
+  right: 550px;
+}
+#modal04 {
+  position: absolute;
+  top: 1120px;
+  left: 550px;
+  right: 0;
+}
+

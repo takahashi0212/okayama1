@@ -35,7 +35,6 @@
     modal01.classList.add('hidden');
     mask.classList.add('hidden');
   });
-
   close02.addEventListener('click', () => {
     modal02.classList.add('hidden');
     mask.classList.add('hidden');

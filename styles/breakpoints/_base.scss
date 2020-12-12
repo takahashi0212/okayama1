@@ -278,7 +278,7 @@ display: flex;
   left: 0;
   right: 550px;
   &.hidden {
-    transform: translate(-1100px, 0);
+    transform: translate(-1200px, 0);
   }
 }
 
@@ -288,7 +288,7 @@ display: flex;
   left: 0;
   right: 550px;
   &.hidden {
-    transform: translate(1100px, 0);
+    transform: translate(-1300px, 0);
   }
 }
 #modal03 {
@@ -297,7 +297,7 @@ display: flex;
   left: 0;
   right: 550px;
   &.hidden {
-    transform: translate(-1100px, 0);
+    transform: translate(-1200px, 0);
   }
 }
 #modal04 {
@@ -306,7 +306,7 @@ display: flex;
   left: 0;
   right: 550px;
   &.hidden {
-    transform: translate(1100px, 0);
+    transform: translate(-1300px, 0);
   }
 }
 
