@@ -1,16 +1,16 @@
 let map;
-let foodkkk = document.getElementById('foodkkk');
-let foodkkkk = document.getElementById('foodkkkk');
+let food0 = document.getElementById('food0');
+let food1 = document.getElementById('food1');
 let currentInfoWindow = null;
 const marker = [];
 const infoWindow = [];
 const markerData = [ // マーカーを立てる場所名・緯度・経度
  {
-      name: 'クロワサンス',
+      name: '<a href="http://www.croissance.jp/">クロワサンス</a>',
       lat: 34.660559,
       lng: 133.919978
  }, {
-      name: 'ふるいち 本店',
+      name: '<a href="https://www.marubu.com/">倉敷うどん<br>「ぶっかけ」ふるいち</a>',
       lat: 34.601209,
       lng: 133.767403
  }
@@ -22,7 +22,7 @@ function initMap() {
  const mapOkayama = new google.maps.LatLng({lat: 34.66707, lng: 133.91769}); // 緯度経度のデータ作成
    map = new google.maps.Map(document.getElementById('map'), { // #sampleに地図を埋め込む
      center: mapOkayama, // 地図の中心を指定
-      zoom: 10 // 地図のズームを指定
+      zoom: 11 // 地図のズームを指定
    });
   
  // マーカー毎の処理
@@ -53,13 +53,27 @@ function markerEvent(i) {
     currentInfoWindow = infoWindow[i];
   });
 
-  foodkkk.addEventListener('click', () => {
+
+
+
+
+  food0.addEventListener('click', () => {
+    
+    if (currentInfoWindow != null){
+			currentInfoWindow.close();
+    }
     infoWindow[0].open(map, marker[0]);
-    console.log('クリック');
+    currentInfoWindow = infoWindow[i];
   });
-  foodkkkk.addEventListener('click', () => {
+
+  food1.addEventListener('click', () => {
+   
+   
+    if (currentInfoWindow != null){
+			currentInfoWindow.close();
+    }
     infoWindow[1].open(map, marker[1]);
-    console.log('クリック');
+    currentInfoWindow = infoWindow[i];
   });
 }
 
