@@ -1,6 +1,7 @@
 let map;
 let food0 = document.getElementById('food0');
 let food1 = document.getElementById('food1');
+let food2 = document.getElementById('food2');
 let currentInfoWindow = null;
 const marker = [];
 const infoWindow = [];
@@ -13,16 +14,20 @@ const markerData = [ // マーカーを立てる場所名・緯度・経度
       name: '<a href="https://www.marubu.com/">倉敷うどん<br>「ぶっかけ」ふるいち</a>',
       lat: 34.601209,
       lng: 133.767403
+ }, {
+      name: '<a href="https://www.kurashiki-sh.co.jp/shirakabe/">瀬戸内海鮮料理 白壁</a>',
+      lat: 34.60024,
+      lng: 133.76750
  }
 ];
   
 function initMap() {
   // 'use strict';
  // 地図の作成
- const mapOkayama = new google.maps.LatLng({lat: 34.66707, lng: 133.91769}); // 緯度経度のデータ作成
+ const mapOkayama = new google.maps.LatLng({lat: 34.64264, lng: 133.85290}); // 緯度経度のデータ作成
    map = new google.maps.Map(document.getElementById('map'), { // #sampleに地図を埋め込む
      center: mapOkayama, // 地図の中心を指定
-      zoom: 11 // 地図のズームを指定
+      zoom: 12 // 地図のズームを指定
    });
   
  // マーカー毎の処理
@@ -58,7 +63,6 @@ function markerEvent(i) {
 
 
   food0.addEventListener('click', () => {
-    
     if (currentInfoWindow != null){
 			currentInfoWindow.close();
     }
@@ -67,12 +71,18 @@ function markerEvent(i) {
   });
 
   food1.addEventListener('click', () => {
-   
-   
     if (currentInfoWindow != null){
 			currentInfoWindow.close();
     }
     infoWindow[1].open(map, marker[1]);
+    currentInfoWindow = infoWindow[i];
+  });
+
+  food2.addEventListener('click', () => {
+    if (currentInfoWindow != null){
+			currentInfoWindow.close();
+    }
+    infoWindow[2].open(map, marker[2]);
     currentInfoWindow = infoWindow[i];
   });
 }
