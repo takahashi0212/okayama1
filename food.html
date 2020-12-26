@@ -61,11 +61,23 @@
             </main>
           </div>
         </div>
-        
-        <a id="food0" href="#">クロワサンス</a>
-        <a id="food1" href="#">ふるいち 本店</a>
-        <a id="food2" href="#">瀬戸内海鮮料理 白壁</a>
-
+        <div class="tabmenu">
+          <ul class="menu">
+            <li><a href="#" class="active" data-id="udon">うどん</a></li>
+            <li><a href="#" data-id="french">フレンチ</a></li>
+            <li><a href="#" data-id="japanese-food">和食</a></li>
+          </ul>
+          <section class="content active" id="udon">
+            <span class="list-color">●</span><a id="food1" href="#">ふるいち 本店</a>
+          </section>
+          <section class="content" id="french">
+            <span class="list-color">●</span><a id="food0" href="#">クロワサンス</a>
+          </section>
+          <section class="content" id="japanese-food">
+            <span class="list-color">●</span><a id="food3" href="#">喰切料理 八方</a>
+            <span class="list-color">●</span><a id="food2" href="#">瀬戸内海鮮料理 白壁</a>
+          </section>
+        </div>
          
         <footer class="footer appear up">
           <div class="logo item">

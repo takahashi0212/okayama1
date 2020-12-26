@@ -2,6 +2,7 @@ let map;
 let food0 = document.getElementById('food0');
 let food1 = document.getElementById('food1');
 let food2 = document.getElementById('food2');
+let food3 = document.getElementById('food3');
 let currentInfoWindow = null;
 const marker = [];
 const infoWindow = [];
@@ -18,6 +19,10 @@ const markerData = [ // マーカーを立てる場所名・緯度・経度
       name: '<a href="https://www.kurashiki-sh.co.jp/shirakabe/">瀬戸内海鮮料理 白壁</a>',
       lat: 34.60024,
       lng: 133.76750
+ }, {
+      name: '<a href="https://kuikiri-happou.jp/">喰切料理 八方</a>',
+      lat: 34.66945,
+      lng: 133.92863
  }
 ];
   
@@ -83,6 +88,14 @@ function markerEvent(i) {
 			currentInfoWindow.close();
     }
     infoWindow[2].open(map, marker[2]);
+    currentInfoWindow = infoWindow[i];
+  });
+
+  food3.addEventListener('click', () => {
+    if (currentInfoWindow != null){
+			currentInfoWindow.close();
+    }
+    infoWindow[3].open(map, marker[3]);
     currentInfoWindow = infoWindow[i];
   });
 }
