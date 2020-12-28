@@ -3,6 +3,9 @@ let food0 = document.getElementById('food0');
 let food1 = document.getElementById('food1');
 let food2 = document.getElementById('food2');
 let food3 = document.getElementById('food3');
+let food4 = document.getElementById('food4');
+let food5 = document.getElementById('food5');
+let food6 = document.getElementById('food6');
 let currentInfoWindow = null;
 const marker = [];
 const infoWindow = [];
@@ -23,6 +26,18 @@ const markerData = [ // マーカーを立てる場所名・緯度・経度
       name: '<a href="https://kuikiri-happou.jp/">喰切料理 八方</a>',
       lat: 34.66945,
       lng: 133.92863
+ }, {
+      name: '<a href="https://tabelog.com/okayama/A3301/A330101/33001952/">鮨 縁</a>',
+      lat: 34.66429,
+      lng: 133.92408
+ }, {
+      name: '<a href="https://il-grano.jp/lionni/">レオーニ</a>',
+      lat: 34.67705,
+      lng: 133.91983
+ }, {
+      name: '<a href="https://tabelog.com/okayama/A3301/A330101/33016638/">二代目 麺処くるり</a>',
+      lat: 34.68109,
+      lng: 133.90881
  }
 ];
   
@@ -32,7 +47,7 @@ function initMap() {
  const mapOkayama = new google.maps.LatLng({lat: 34.64264, lng: 133.85290}); // 緯度経度のデータ作成
    map = new google.maps.Map(document.getElementById('map'), { // #sampleに地図を埋め込む
      center: mapOkayama, // 地図の中心を指定
-      zoom: 12 // 地図のズームを指定
+      zoom: 13 // 地図のズームを指定
    });
   
  // マーカー毎の処理
@@ -96,6 +111,29 @@ function markerEvent(i) {
 			currentInfoWindow.close();
     }
     infoWindow[3].open(map, marker[3]);
+    currentInfoWindow = infoWindow[i];
+  });
+
+  food4.addEventListener('click', () => {
+    if (currentInfoWindow != null){
+			currentInfoWindow.close();
+    }
+    infoWindow[4].open(map, marker[4]);
+    currentInfoWindow = infoWindow[i];
+  });
+
+  food5.addEventListener('click', () => {
+    if (currentInfoWindow != null){
+			currentInfoWindow.close();
+    }
+    infoWindow[5].open(map, marker[5]);
+    currentInfoWindow = infoWindow[i];
+  });
+  food6.addEventListener('click', () => {
+    if (currentInfoWindow != null){
+			currentInfoWindow.close();
+    }
+    infoWindow[6].open(map, marker[6]);
     currentInfoWindow = infoWindow[i];
   });
 }
