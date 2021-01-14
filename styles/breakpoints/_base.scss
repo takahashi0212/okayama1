@@ -338,17 +338,16 @@ display: flex;
 
 .tabmenu {
   margin: 30px auto;
-  width: 500px;
+  width: 100%;
   & .menu {
     list-style: none;
-    padding: 0;
     margin: 0;
     display: flex;
     & li a {
       display: inline-block;
-      width: 100px;
+      width: 100%;
       text-align: center;
-      padding: 8px 0;
+      padding: 8px 15px;
       color: #333;
       text-decoration: none;
       &.active {
@@ -362,13 +361,13 @@ display: flex;
   }
 }
 
-// .menu li a.active {
-//   background: #fff;
-//   color: pink;
-//   border: 1px solid pink;
-//   border-top: none;
-//   border-bottom: none;
-// }
+.menu li a.active {
+  background: #fff;
+  color: pink;
+  border: 1px solid pink;
+  border-top: none;
+  border-bottom: none;
+}
 
 .menu li a:not(.active):hover {
   opacity: 0.5;
