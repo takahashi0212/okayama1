@@ -352,8 +352,8 @@ display: flex;
       text-decoration: none;
       &.active {
         background: #fff;
-        color: pink;
-        border: 1px solid pink;
+        color: $cPink;
+        border: 1px solid $cPink;
         border-top: none;
         border-bottom: none;
       }
@@ -363,8 +363,8 @@ display: flex;
 
 .menu li a.active {
   background: #fff;
-  color: pink;
-  border: 1px solid pink;
+  color: $cPink;
+  border: 1px solid $cPink;
   border-top: none;
   border-bottom: none;
 }
@@ -372,7 +372,7 @@ display: flex;
 .menu li a:not(.active):hover {
   opacity: 0.5;
   transition: opacity 0.4s;
-  color: pink;
+  color: $cPink;
 }
 
 .content.active {
@@ -387,6 +387,13 @@ display: flex;
   display: none;
 }
 .list-color {
-  color: pink;
+  color: $cPink;
   margin-left: 13px;
+}
+.making {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+  color: $cPink;
 }
